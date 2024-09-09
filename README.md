@@ -1,2 +1,2 @@
 # GAN-model-for-Anomaly-Detection
-Using GAN Models for Anomaly Detection in Interconnected Integrated Energy Systems (IES) to Transmission Networks
+AI-powered real-time monitoring of interconnected Integrated Energy Systems (IES) and transmission networks using WGAN-GP models for anomaly detection.
