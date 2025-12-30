@@ -75,7 +75,7 @@ Run all cells to train the **WGAN‑GP + LSTM** model. Monitor generator/discrim
 
 Use an inference notebook (e.g., `score_stream.ipynb`) to score **incoming signals**:
 
-- Compute **discriminator probability** + **generator reconstruction error** per window.  \
+- Compute **discriminator probability** + **generator reconstruction error** per window.  
 - Fuse them into an **anomaly likelihood** and compare to a **threshold**.
 
 > As shown in the paper’s sensitivity study, lowering the detection threshold increases detection of fake samples from **12% (τ=0.7)** to **93% (τ=0.1)**, at the cost of more false alarms. Tune for your operational needs. 
