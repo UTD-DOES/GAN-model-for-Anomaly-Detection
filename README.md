@@ -16,7 +16,7 @@ Modern IES blend renewables (solar, wind), batteries, clean fuels, and thermal d
 
 > **Paper**: *Generative AI‑Enhanced Real‑Time Anomaly Detection in Integrated Energy Systems*, IEEE Transactions on Smart Grid (2026).  
 
-> **GitHub repository**: https://github.com/UTD-DOES/GAN-model-for-Anomaly-Detection  \
+> **GitHub repository**: https://github.com/UTD-DOES/GAN-model-for-Anomaly-Detection  
 
 ---
 
