@@ -14,7 +14,7 @@
 
 Modern IES blend renewables (solar, wind), batteries, clean fuels, and thermal demand—boosting efficiency and resilience while enlarging the cyber‑attack surface at the **grid–IES interface**. Labeled attack data is scarce, so this project uses **generative models** trained on **simulation‑based time‑series** to learn “normal” behavior and flag deviations **in real time**. The implementation combines a **Wasserstein GAN with Gradient Penalty (WGAN‑GP)** with **LSTM** temporal modeling; the generator’s **reconstruction error** and the discriminator’s **probability score** are fused to produce an anomaly likelihood over **sliding latent windows**. 
 
-> **Paper**: *Generative AI‑Enhanced Real‑Time Anomaly Detection in Integrated Energy Systems*, IEEE Transactions on Smart Grid (2026).  
+> **Paper**: *Generative AI‑Enhanced Real‑Time Anomaly Detection in Integrated Energy Systems*, IEEE Transactions on Smart Grid, 2026, DOI: https://doi.org/10.1109/TSG.2025.3630562.  
 
 > **GitHub repository**: https://github.com/UTD-DOES/GAN-model-for-Anomaly-Detection  
 
@@ -107,7 +107,7 @@ If you use this repository or build upon its method, please cite:
 ```text
 S. Badakhshan, J. Zhang,
 "Generative AI‑Enhanced Real‑Time Anomaly Detection in Integrated Energy Systems,"
-IEEE Transactions on Smart Grid, 2026.
+IEEE Transactions on Smart Grid, 2026, DOI: https://doi.org/10.1109/TSG.2025.3630562.
 ```
 
 ---
@@ -125,7 +125,7 @@ Pull requests are welcome! Please:
 ## Links
 
 - **GitHub**: https://github.com/UTD-DOES/GAN-model-for-Anomaly-Detection 
-- **IEEE Xplore Abstract (if accessible)**: https://ieeexplore.ieee.org/abstract/document/11232457 
+- **IEEE Xplore Abstract**: https://ieeexplore.ieee.org/abstract/document/11232457 
 
 ---
 
