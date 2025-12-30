@@ -105,9 +105,7 @@ Use an inference notebook (e.g., `score_stream.ipynb`) to score **incoming signa
 If you use this repository or build upon its method, please cite:
 
 ```text
-S. Badakhshan, J. Zhang,
-"Generative AI‑Enhanced Real‑Time Anomaly Detection in Integrated Energy Systems,"
-IEEE Transactions on Smart Grid, 2026, DOI: https://doi.org/10.1109/TSG.2025.3630562.
+S. Badakhshan, J. Zhang, "Generative AI‑Enhanced Real‑Time Anomaly Detection in Integrated Energy Systems," IEEE Transactions on Smart Grid, 2026, DOI: https://doi.org/10.1109/TSG.2025.3630562.
 ```
 
 ---
