@@ -43,8 +43,6 @@ pip install --upgrade pip
 pip install jupyter numpy scipy pandas matplotlib torch torchvision torchaudio scikit-learn
 ```
 
-> The GitHub language breakdown indicates notebooks + Python; using Jupyter ensures parity with the intended workflow. 
-
 ---
 
 ## Data
@@ -85,27 +83,6 @@ Use an inference notebook (e.g., `score_stream.ipynb`) to score **incoming signa
 
 ---
 
-## Command‑Line (Optional Scripts)
-
-If you convert notebooks to scripts or use existing `.py` files, a typical flow might be:
-
-```bash
-# Train
-python GAN\ Model/train_wgangp_lstm.py \
-  --data_dir Dataset/ \
-  --save_dir checkpoints/ \
-  --epochs 35 --batch_size 40 --lr 1e-4 --z_dim 100
-
-# Inference / streaming score
-python GAN\ Model/score_stream.py \
-  --model checkpoints/best.pt \
-  --data_dir Dataset/ \
-  --threshold 0.5
-```
-
-> Adjust script/file names to match your repo. The top‑level folders `Dataset/` and `GAN Model/` are confirmed on GitHub. 
-
----
 
 ## Method Details
 
@@ -116,27 +93,11 @@ python GAN\ Model/score_stream.py \
 
 ---
 
-## Results (from the paper)
-
-- **Case A – Constant thermal load**: LSTM‑GAN achieved **95.4% accuracy**, **94.3% precision**, **96.6% recall**, with **Type I error 5.8%** and **Type II error 3.3%**, outperforming DCGAN and WGAN‑GP baselines. 
-- **Case B – Variable thermal load (non‑stationary)**: Model reached **88.33% accuracy** and **89.65% precision**, showing robustness under electro‑thermal coupling with changing thermal setpoints. 
-
-KDE/PDF overlap analyses indicate that **LSTM‑GAN** most closely matches real data distributions compared to DCGAN/WGAN‑GP in this context. 
-
----
 
 ## Reproducibility & Hardware
 
 - **Optimizer**: **RMSprop**, selected for non‑stationary objectives and sparse gradients common in coupled thermal‑electrical dynamics. 
 - **Hardware**: Efficient on CPU; paper experiments used **Intel® Xeon® E5‑2603 v3 (12 cores)**. GPU is optional. 
-
----
-
-## Roadmap
-
-- Integrate with **digital twins** and **agent‑based** mitigation for adaptive response. 
-- Add **GCNs** for topology‑aware detection of low‑intensity, system‑level threats. 
-- Provide GPT‑based **explainability** (operator‑friendly root‑cause analysis). 
 
 ---
 
@@ -150,9 +111,6 @@ S. Badakhshan, J. Zhang,
 IEEE Transactions on Smart Grid, 2026.
 ```
 
-- PDF / preprint: UT Dallas page (personal site)  \
-- Abstract: IEEE Xplore (access dependent) 
-
 ---
 
 ## Contributing
@@ -162,12 +120,6 @@ Pull requests are welcome! Please:
 - Keep notebooks **reproducible** (seeded randomness, explicit data paths).
 - Add unit tests for new Python utilities.
 - Consider adding `CONTRIBUTING.md`, issue templates, and a security policy to meet GitHub community standards. 
-
----
-
-## License
-
-No license file is currently shown on the GitHub code page. Please add a license (e.g., MIT or Apache‑2.0) to enable broader reuse. 
 
 ---
 
