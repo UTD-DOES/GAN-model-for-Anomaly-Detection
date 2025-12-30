@@ -46,7 +46,7 @@ pip install jupyter numpy scipy pandas matplotlib torch torchvision torchaudio s
 
 ## Data
 
-- Place your simulation‑generated time series (e.g., bus voltages, frequency, power flows) under **`Dataset/`**.  \
+- Place your simulation‑generated time series (e.g., bus voltages, frequency, power flows) under **`Dataset/`**.  
 - The paper’s dataset was produced with **PSS®E** on IES connected to **IEEE 118‑bus**, covering faults/outages/trips and multiple cyberattack patterns (shift, variance manipulation, oscillation enhancement, blending, injection, noise, partial spoofing). 
 
 If you intend to reproduce the paper’s results, generate a comparable dataset via PSS®E (nonlinear, time‑domain simulations) or adapt field data after appropriate normalization and windowing. 
