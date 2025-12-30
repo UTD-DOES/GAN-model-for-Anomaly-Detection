@@ -7,7 +7,6 @@
 [![Framework](https://img.shields.io/badge/Generative%20AI-WGAN--GP%20%2B%20LSTM-orange.svg)](#)
 [![Data](https://img.shields.io/badge/Data-PSS%C2%AEE%20%2B%20IEEE%20118--bus-lightgrey.svg)](#)
 [![Status](https://img.shields.io/badge/status-research--code-brightgreen.svg)](#)
-[![License](https://img.shields.io/badge/license-please_add-green.svg)](#license)
 
 ---
 
@@ -16,7 +15,6 @@
 Modern IES blend renewables (solar, wind), batteries, clean fuels, and thermal demand—boosting efficiency and resilience while enlarging the cyber‑attack surface at the **grid–IES interface**. Labeled attack data is scarce, so this project uses **generative models** trained on **simulation‑based time‑series** to learn “normal” behavior and flag deviations **in real time**. The implementation combines a **Wasserstein GAN with Gradient Penalty (WGAN‑GP)** with **LSTM** temporal modeling; the generator’s **reconstruction error** and the discriminator’s **probability score** are fused to produce an anomaly likelihood over **sliding latent windows**. 
 
 > **Paper**: *Generative AI‑Enhanced Real‑Time Anomaly Detection in Integrated Energy Systems*, IEEE Transactions on Smart Grid (2026).  \
-> PDF: `Zhang_2026_IEEE_TSG_GenAI_IES.pdf` (included in this repo’s materials) and hosted online. 
 
 > **GitHub repository**: https://github.com/UTD-DOES/GAN-model-for-Anomaly-Detection  \
 > (Top‑level folders observed: `Dataset/`, `GAN Model/`, and `README.md`; dominant languages are Jupyter Notebook and Python.) 
@@ -29,20 +27,6 @@ Modern IES blend renewables (solar, wind), batteries, clean fuels, and thermal d
 - **Dual‑metric scoring**: fuse **discriminator probability** with **generator reconstruction error** for robust unsupervised detection per sliding window. 
 - **Simulation‑driven data** from **PSS®E** dynamic models of IES connected to the **IEEE 118‑bus** network (faults, outages, trips, and diverse cyberattack patterns). 
 - **Ready for real‑time monitoring**: deploy the **pre‑trained discriminator** to score incoming signals; thresholds tune sensitivity vs. false alarms. 
-
----
-
-## Repository Structure
-
-According to the public GitHub view, the repository exposes these top‑level directories: 
-
-```
-├── Dataset/
-├── GAN Model/
-└── README.md
-```
-
-> **Note**: File names inside each folder may evolve. The examples below use typical names; adjust them to match your actual notebooks/scripts.
 
 ---
 
